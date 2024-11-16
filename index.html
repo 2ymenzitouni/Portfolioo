@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- general css -->
+     <link rel="stylesheet" href="css/general.css">
+     <!-- media -->
+      <link rel="stylesheet" href="css/media.css">
+    <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+     <title>Aymen Resume</title>
+</head>
+<body>
+    <div class="portfolio">
+        <div class="col-1">
+            <ul>
+                <li id="about_button" onclick="showDiv('about')"><a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <p>ABOUT</p>
+                </a></li>
+                <li id="resume_button" onclick="showDiv('resume')"><a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    <p>RESUME</p>
+                </a></li>
+                <li id="projects_button" onclick="showDiv('projects')"><a href="#">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p>PROJECTS</p>
+                </a></li>
+                <li id="contact_button" onclick="showDiv('contact')"><a href="#">
+                    <i class="fa-solid fa-headset"></i>
+                    <p>CONTACT</p>
+                </a></li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <div class="background">
+
+            </div>
+            <div class="info">
+                <p class="name">Aymen Zitouni</p>
+                <p class="domain">
+                    <span class="iam">I'm</span>
+                    <span class="text">Dveloper</span>
+                </p>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#">Download CV<i class="fa-solid fa-download"></i></a>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="about element" id = "about" style="display: none;">
+                <p class="active"><span>About</span> Me</p>
+                <div class="row-1">
+                    <div class="col-1">
+                        <p class="introduction"><span>Hello! I’m Aymen Zitouni</span>. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex illum quaerat sint expedita optio mollitia consequatur odio, at harum ipsum qui vitae voluptatem quia sapiente accusamus assumenda dicta vero magnam?</p>
+                    </div>
+                    <div class="col-2">
+                        <ul>
+                            <li>
+                                <span>Age....</span>
+                                <span><b>21</b></span>
+                            </li>
+                            <li>
+                                <span>Residence....</span>
+                                <span><b>TN</b></span>
+                            </li>
+                            <li>
+                                <span>Address....</span>
+                                <span><b>Sfax</b></span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="row-2">
+                    <p class="active"><span>My</span> Services</p>
+                    <div class="cards">
+                        <div class=" card card-1">
+                            <i class="icon fa-brands fa-html5"></i>
+                            <p class="domain">Front-end</p>
+                            <p class="description">Modern and mobile-ready website that will help you reach all of your marketing.</p>
+                        </div>
+                        <div class=" card card-2">
+                            <i class="icon fa-solid fa-code"></i>
+                            <p class="domain">BackEnd-end</p>
+                            <p class="description">Modern and mobile-ready website that will help you reach all of your marketing.</p>
+                        </div>
+                        <div class=" card card-3">
+                            <i class="icon fa-sharp fa-solid fa-desktop"></i>
+                            <p class="domain">Desktop</p>
+                            <p class="description">Modern and mobile-ready website that will help you reach all of your marketing.</p>
+                        </div>
+                        <div class=" card card-4">
+                            <i class="icon fa-solid fa-palette"></i>
+                            <p class="domain">Photoshop</p>
+                            <p class="description">Modern and mobile-ready website that will help you reach all of your marketing.</p>
+                        </div>
+                        <div class=" card card-5">
+                            <i class="icon fa-solid fa-palette"></i>
+                            <p class="domain">UI/UX Design</p>
+                            <p class="description">Modern and mobile-ready website that will help you reach all of your marketing.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="resume element" id = "resume"style="display: none;">
+                <p class="active"><span>R</span>esume</p>
+                <div class="row-1">
+                    <div class="col col-1">
+                        <div class="head">
+                            <i class="icon fa-solid fa-briefcase"></i>
+                            <span>EXPERIENCE</span>
+                        </div>
+                        <div class="card card-1">
+                            <p class="year">2024 - Present</p>
+                            <p class="post">Name</p>
+                            <p class="place">Place</p>
+                            <p class="description">Collaborate with creative and development teams on the execution of ideas.</p>
+                        </div>
+                        <div class="card card-2">
+                            <p class="year">2024 - Present</p>
+                            <p class="post">Name</p>
+                            <p class="place">Place</p>
+                            <p class="description">Collaborate with creative and development teams on the execution of ideas.</p>
+                        </div>
+                        <div class="card card-3">
+                            <p class="year">2024 - Present</p>
+                            <p class="post">Name</p>
+                            <p class="place">Place</p>
+                            <p class="description">Collaborate with creative and development teams on the execution of ideas.</p>
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <div class="head">
+                            <i class="icon fa-solid fa-building-columns"></i>
+                            <span>EDUCATION</span>
+                        </div>
+                        <div class="card card-1">
+                            <p class="year">2024 - Present</p>
+                            <p class="post">Name</p>
+                            <p class="place">Place</p>
+                            <p class="description">Collaborate with creative and development teams on the execution of ideas.</p>
+                        </div>
+                        <div class="card card-2">
+                            <p class="year">2024 - Present</p>
+                            <p class="post">Name</p>
+                            <p class="place">Place</p>
+                            <p class="description">Collaborate with creative and development teams on the execution of ideas.</p>
+                        </div>
+                        <div class="card card-3">
+                            <p class="year">2024 - Present</p>
+                            <p class="post">Name</p>
+                            <p class="place">Place</p>
+                            <p class="description">Collaborate with creative and development teams on the execution of ideas.</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="row-2">
+                    <p class="active"><span>My</span> Skills</p>
+                    <div class="cards">
+                        <div class="card card-1">
+                            <div class="head">
+                                <i class="icon fa-solid fa-flag"></i>
+                                <span>LANGUAGES</span>
+                            </div>
+                            <div class="languages">
+                                <span>English</span>
+                                <span>French</span>
+                                <br>
+                                <span>Arabic</span>
+                                <span>Spannish</span>
+                            </div>
+                        </div>
+                        <div class="card card-1">
+                            <div class="head">
+                                <i class="icon fa-solid fa-code"></i>
+                                <span>CODING</span>
+                            </div>
+                                <div class="skills">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Tailwind</span>
+                                    <br>
+                                    <span>Bootstrap</span>
+                                    <span>JS</span>
+                                    <span>JQuery</span>
+                                    <br>
+                                    <span>C</span>
+                                    <span>Python</span>
+                                    <span><b>Django</b></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <p class="active"><span>T</span>estimonials</p>
+                    <div class="cards">
+                    <div class="slider">
+                        <div class="square" data-index="1">
+                          <div class="content">
+                            <div class="card card-1">
+                                <div class="image">
+                                    <img src="img/background.jpg" alt="">
+                                </div>
+                                <p class="name">Aymen Zitouni</p>
+                                <p class="description">
+                                    <i class="fa-solid fa-quote-left" style="color:#ffcd3f;"></i>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam doloribus, maxime modi assumenda.
+                                    <i class="fa-solid fa-quote-right" style="color:#ffcd3f"></i></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="square" data-index="2">
+                          <div class="content">
+                            <div class="card card-1">
+                                <div class="image">
+                                    <img src="img/background.jpg" alt="">
+                                </div>
+                                <p class="name">Aymen Zitouni</p>
+                                <p class="description">
+                                    <i class="fa-solid fa-quote-left" style="color:#ffcd3f;"></i>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam doloribus, maxime modi assumenda.
+                                        <i class="fa-solid fa-quote-right" style="color:#ffcd3f"></i></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="square" data-index="3">
+                          <div class="content">
+                            <div class="card card-1">
+                                <div class="image">
+                                    <img src="img/background.jpg" alt="">
+                                </div>
+                                <p class="name">Aymen Zitouni</p>
+                                <p class="description">
+                                    <i class="fa-solid fa-quote-left" style="color:#ffcd3f;"></i>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, laboriosam doloribus, maxime modi assumenda.
+                                    <i class="fa-solid fa-quote-right" style="color:#ffcd3f;"></i></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                      <div class="menu">
+                        <div class="menu-item active" data-index="1">
+                          <i class="icon"></i>
+                        </div>
+                        <div class="menu-item" data-index="2">
+                          <i class="icon"></i>
+                        </div>
+                        <div class="menu-item" data-index="3">
+                          <i class="icon"></i>
+                        </div>
+                      
+                </div>
+            </div>
+            <div class="projects element" id="projects">
+                <div class="row-1">
+                    <div class="head">
+                        <p class="active"><span>Recent </span> Works</p>
+                        <ul>
+                            <li><a class="active" href="#">All</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Web</a></li>
+                            <li><a href="#">Software</a></li>
+                        </ul>
+                    </div>
+                    <div class="row-2">
+                        <div class="all cards">
+                            <div class="card card-1">
+                                <a href="#">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <img src="img/work1.jpg" alt="">
+                                </a>
+                                <p class="name">Motocycle Helmet</p>
+                                <p class="type">Photoshop</p>
+                            </div>
+                            <div class="card card-1">
+                                <a href="#">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <img src="img/work1.jpg" alt="">
+                                </a>
+                                <p class="name">Motocycle Helmet</p>
+                                <p class="type">Photoshop</p>
+                            </div>
+                            <div class="card card-1">
+                                <a href="#">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <img src="img/work1.jpg" alt="">
+                                </a>
+                                <p class="name">Motocycle Helmet</p>
+                                <p class="type">Photoshop</p>
+                            </div>
+                            <div class="card card-1">
+                                <a href="#">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <img src="img/work1.jpg" alt="">
+                                </a>
+                                <p class="name">Motocycle Helmet</p>
+                                <p class="type">Photoshop</p>
+                            </div>
+                        </div>
+                        <!-- <div class="design cards">
+                            <div class="card card-1">
+                                <a href="#">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <img src="img/work1.jpg" alt="">
+                                </a>
+                                <p class="name">Motocycle Helmet</p>
+                                <p class="type">Photoshop</p>
+                            </div>
+                        </div>
+                        <div class="web cards">
+                            <div class="card card-1">
+                                <a href="#">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <img src="img/work1.jpg" alt="">
+                                </a>
+                                <p class="name">Motocycle Helmet</p>
+                                <p class="type">Photoshop</p>
+                            </div>
+                        </div>
+                        <div class="software cards">
+                            <div class="card card-1">
+                                <a href="#">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <img src="img/work1.jpg" alt="">
+                                </a>
+                                <p class="name">Motocycle Helmet</p>
+                                <p class="type">Photoshop</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="contact element" id="contact" style="display: none;">
+                <div class="row-2">
+                    <p class="active">Contact <span>Form</span></p>
+                    <form action="">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Email Address"><br>
+                        <textarea name="" id="" style="resize: none;" placeholder="Your Message"></textarea><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+     <script>
+        var typing=new Typed(".text", {
+        strings: ["", "Youtuber","Web Designer", "Web Developer" , "Software Developer"],
+        typeSpeed: 100,
+        backSpeed: 40,
+        loop: true,
+        });
+     </script>
+     <script src="js/main.js"></script>
+     <script src="js/script.js"></script>
+</body>
+</html>

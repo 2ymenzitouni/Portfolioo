@@ -1,0 +1,82 @@
+
+@media screen and (max-width : 1400px) {
+    .portfolio{
+        display: grid;
+        grid-template-areas: "col1 col1 col1 col1"
+                             "col2 col2 col2 col3";
+    }
+    .portfolio > .col-1{
+        grid-area: col1;
+        height: auto;
+        margin-bottom: 20px;
+        /* background-color: red; */
+    }
+    .portfolio > .col-1 ul{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    } 
+    .portfolio > .col-1 ul li{
+        width: 100%;
+    }  
+    .portfolio > .col-2{
+        grid-area: col2;
+        /* width: 100%; */
+        min-width: 300px;
+    }   
+    .portfolio > .col-3{
+        grid-area: col3;
+        /* width: 100%; */
+    }
+}
+
+@media screen and (max-width : 800px){
+    .portfolio{
+        grid-template-areas: "col1 col1 col1 col1"
+                             "col2 col2 col2 col2"
+                             "col3 col3 col3 col3";
+        /* justify-content: center; */
+    }
+    .portfolio > .col-3{
+        min-height: 100vh;
+        overflow: auto;
+        /* margin-top: 600px; */
+    }
+    .portfolio > .col-2{
+        width: 100%;
+        height: 800px;
+    }
+    .portfolio > .col-2 .background{
+        /* height: 100% */
+        /* background-color: red; */
+        height: 550px;
+        background-position: center;
+    }
+    .portfolio > .col-2 .background::after{
+        bottom: -120px;
+        height: 160px;
+    }
+    .portfolio > .col-2 .background::before{
+        bottom: -120px;
+        height: 160px;
+    }
+}
+@media screen and (max-width : 400px){
+    .portfolio{
+        /* padding-right: 20px; */
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform:translateX(-50%);
+        align-items: normal;
+        /* align-content: center; */
+    }
+    .portfolio > .col-2{
+        /* width: 380px; */
+    }
+    .portfolio > .col-3{
+        overflow:visible;
+        margin:0 20px 0;
+        /* padding-bottom: 50px; */
+    }
+}

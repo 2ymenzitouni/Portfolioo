@@ -1,0 +1,504 @@
+/* =================================Portfolio=================================*/
+.portfolio{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90vw;
+    height: 75vh;
+}
+/* .portfolio{
+    display: grid;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90vw;
+    height: 75vh;
+    grid-template-areas: "col1 col1 col1 col1"
+                         "col2 col2 col3 col3";
+} */
+/* =================================Portfolio col-1=================================*/
+.portfolio > .col-1{
+    /* background-color: red; */
+    text-align: center;
+    height: 300px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.portfolio > .col-1 ul li{
+    padding: 10px;
+    background-color: #363640;
+    height: 80px;
+    border-bottom: 1px solid #9999999f;
+    transition: all .9s;
+}
+.portfolio >.col-1 ul li a{
+    color: #000;
+    /* font-weight: bold; */
+    font-size: 15px;
+}
+.portfolio >.col-1 ul li:hover a i{
+    color: #ffcd3f;
+    transition: color .3s;
+}
+.portfolio > .col-1 ul li a i{
+    padding: 8px 0 15px 0 ;
+}
+/* =================================Portfolio col-2=================================*/
+
+.portfolio > .col-2{
+    background-color: white;
+    background-color: #31313a;
+    width: 450px;
+    height: 580px;
+    border-radius: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.portfolio > .col-2::after{
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: -15px;
+    border-radius: 10px;
+    background-color: #2a2a30;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.portfolio > .col-2 .background{
+    background-image: url(..//img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.portfolio > .col-2 .background::after{
+    content: "";
+    position: absolute;
+    bottom: -63px;
+    left: -144px;
+    width: 100%;
+    height: 100px;
+    background-color: #31313a;
+    rotate: -165deg;
+}
+.portfolio > .col-2 .background::before{
+    content: "";
+    position: absolute;
+    bottom: -63px;
+    right: -144px;
+    width: 100%;
+    height: 100px;
+    background-color: #31313a;
+    rotate: 165deg;
+}
+.portfolio > .col-2 .info{
+
+}
+.portfolio > .col-2 .info p.name{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 28px;
+    color: #fff;
+}
+.portfolio > .col-2 .info p.domain{
+    text-align: center;
+    /* font-weight: bold; */
+    color: #ffcd3f;
+    padding-top: 10px;
+    font-size:20px;
+    cursor: pointer;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.portfolio > .col-2 .info .social-media{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    /* background-color: red; */
+}
+.portfolio > .col-2 .info .social-media a i{
+    padding-left: 10px;
+    font-size: 25px;
+}
+.portfolio > .col-2 .info .social-media a:hover i{
+    color: #fab700;
+    font-size: 30px;   
+    transition: font-size .3s; 
+}
+.portfolio > .col-2 .buttons{
+    position: absolute;
+    bottom: 0;
+    /* text-align: center; */
+    width: 100%;
+    /* border-radius: 10px; */
+    /* border-bottom-left-radius:10px ; */
+    /* border-bottom-left-radius: 10px; */
+    /* background-color: red; */
+    margin: auto;
+}
+.portfolio > .col-2 .buttons a{
+    /* background-color: #b42424; */
+    padding: 18px 43px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.portfolio > .col-2 .buttons a:hover{
+    /* color: #ffcd3f; */
+    background-color: #fab700;
+    transition: all .3s;
+}
+.portfolio > .col-2 .buttons a i{
+    margin-left: 20px;
+}
+.portfolio > .col-2 .buttons a:hover i{
+    margin-left: 70px;
+    transition: margin .8s;
+}
+.portfolio > .col-2 .buttons a{
+    background-color: #d39e0c;
+    /* background-color: #31313a; */
+    border-top: 1px solid #ffcd3f;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+/* =================================Portfolio col-3=================================*/
+.portfolio > .col-3{
+    padding: 20px 0 100px 20px;
+    background-color: #363640;
+    flex: 1;
+    height: 100%;
+    overflow-y: scroll;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+/* =================================about=================================*/
+
+.portfolio > .col-3 .about{
+
+}
+.portfolio > .col-3 .about .row-1{
+    display: flex;
+    /* background-color: green; */
+}
+.portfolio > .col-3 .about .row-1 .col-1 {
+    width: 60%;
+}
+.portfolio > .col-3 .about .row-1 .col-1 p.introduction{
+    color: #85867c;
+    font-size: 18px;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.portfolio > .col-3 .about .row-1 .col-1 p.introduction span{
+    font-weight: bold;
+}
+.portfolio > .col-3 .about .row-1 .col-2{
+    /* background-color: red; */
+    flex: 1;
+    border-left: 1px solid #8a8a8aa0;
+    padding-left: 10px;
+}
+.portfolio > .col-3 .about .row-1 .col-2 ul li{
+    display: flex;
+    padding: 15px 5px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #8a8a8aa0;
+}
+.portfolio > .col-3 .about .row-1 .col-2 ul li span:first-child{
+    background-color: #fab700;
+    color: #fff;
+    padding: 2px 10px;
+}
+.portfolio > .col-3 .about .row-2 .cards{
+    display: grid;
+    gap: 20px ;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+    text-align: center;
+}
+.portfolio > .col-3 .about .row-2 .cards .card i.icon{
+    font-size: 35px;
+}
+.portfolio > .col-3 .about .row-2 .cards .card p.domain{
+    font-weight: bold;
+    padding: 10px 0;
+}
+.portfolio > .col-3 .about .row-2 .cards p.description{
+    color: #fff;
+    line-height: 20px;
+}
+/* =================================resume=================================*/
+.portfolio > .col-3 .resume .row-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+}
+.portfolio > .col-3 .resume .row-1 .col-1 , .portfolio > .col-3 .resume .row-1 .col-2{
+    position: relative;
+    /* padding-right: 20px; */
+}
+.portfolio > .col-3 .resume .row-1 .col-1::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ffcc3f1a;
+}
+.portfolio > .col-3 .resume .head{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.portfolio > .col-3 .resume .head i{
+    font-size: 30px;
+    padding-right: 10px;
+}
+.portfolio > .col-3 .resume .head span{
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.portfolio > .col-3 .resume .row-1 .card p.year{
+    border-radius: 5px;
+    border: 1px solid #ffcd3f;
+    background-color: #ffcd3f1f;
+    display: inline-block;
+    padding: 2px 6px;
+}
+.portfolio > .col-3 .resume .row-1 .card p.post{
+    margin-top: 8px;
+    font-size: 20px;
+}
+.portfolio > .col-3 .resume .row-1 .card p.place{
+    color: #ffcd3f;
+    font-size: 15px;
+}
+.portfolio > .col-3 .resume .row-1 .card p.description{
+    padding: 10px 0 20px 0;
+    line-height: 25px;
+    color: #aeaeae;
+    position: relative;
+    
+}
+.portfolio > .col-3 .resume .row-1 .card p.description::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 1px;
+   background-color: #ffcc3f1a;
+   bottom: 10px;
+   left: 0;
+   
+}
+.portfolio > .col-3 .resume .row-2 .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,auto));
+}
+.portfolio > .col-3 .resume .row-2 .cards .card p.language{
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.portfolio > .col-3 .resume .row-2 .cards .card p.language i{
+    font-size: 30px;
+    padding-right: 5px;
+}
+.portfolio > .col-3 .resume .row-2 .cards .card ul{
+    margin-left: 30px;
+}
+.portfolio > .col-3 .resume .row-2 .cards .card .skills span , .languages span{
+    /* color: #777; */
+    display: inline-block;
+    padding:10px ;
+}
+.portfolio > .col-3 .resume .row-3{
+    overflow: hidden;
+}
+.portfolio > .col-3 .resume .row-3 .cards .card .image{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.portfolio > .col-3 .resume .row-3 .cards .card .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #ffcd3f54;
+}
+.portfolio > .col-3 .resume .row-3 .cards .card p.description{
+    color: #999;
+    display: inline-block;
+    padding:10px ;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+.portfolio > .col-3 .resume .row-3 .cards .card p.name{
+    text-align: center;
+    padding: 10px 0 5px;
+    font-size: 25px;
+    position: relative;
+}
+.portfolio > .col-3 .resume .row-3 .cards .card p.name::after{
+    content: "";
+    width: 180px;
+    height: 10px;
+    background-color: #ffcd3f60;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.portfolio > .col-3 .resume .row-3 .slider .card p.description i{
+    padding: 0 10px;
+}
+/* =================================projects=================================*/
+.portfolio > .col-3 .projects .head{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 70px 15px;
+}
+.portfolio > .col-3 .projects .head p.active{
+    flex:1;
+    /* background-color: red; */
+    margin: 0;
+}
+.portfolio > .col-3 .projects .head ul{
+    margin-right: 60px;
+    display: flex;
+    /* background: green; */
+}
+.portfolio > .col-3 .projects .head ul li{
+    margin-left: 20px;
+}
+.portfolio > .col-3 .projects .head ul li a {
+    color: #fff;
+    font-size: 15px;
+}
+.portfolio > .col-3 .projects .row-1 .head ul li a:hover {
+    color: #fab700;
+    transition: color .5s;
+}
+.portfolio > .col-3 .projects .row-1 .head ul li a.active {
+    color: #fab700;
+}
+.portfolio > .col-3 .projects .row-2 .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,auto));
+    gap:20px;
+    text-align: center;
+    
+}
+.portfolio > .col-3 .projects .row-2 .card{
+    /* background-color: red; */
+    background-color: #3b3b45;
+    padding-bottom: 10px;
+}
+.portfolio > .col-3 .projects .row-2 .card > a{
+    position: relative;
+    display: inline-block;
+    background-color: #fab700;
+    overflow: hidden;
+}
+.portfolio > .col-3 .projects .row-2 .card > a::after{
+    content: "";
+    position: absolute;
+    /* top: 0px; */
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fab700b7;
+    transition: all .5s;
+}
+.portfolio > .col-3 .projects .row-2 .card > a:hover::after{
+    height: 100%;
+}
+.portfolio > .col-3 .projects .row-2 .card > a:hover{
+
+}
+
+.portfolio > .col-3 .projects .row-2 .card > a i{
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 111111111111;
+}
+.portfolio > .col-3 .projects .row-2 .card > a:hover i{
+    display: block;
+}
+.portfolio > .col-3 .projects .row-2 .card img{
+    width: 100%;
+}
+.portfolio > .col-3 .projects .row-2 .card p.name{
+    padding:10px;
+}
+.portfolio > .col-3 .projects .row-2 .card p.type{
+    color: #fab700;
+}
+/* =================================contact=================================*/
+.portfolio > .col-3 .contact .row-1{
+
+}
+.portfolio > .col-3 .contact .row-2 form input{
+    padding: 15px 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: #d39e0c14;
+    border: 1px solid #d39e0c;
+    border-radius: 1px;
+}
+.portfolio > .col-3 .contact .row-2 form input::placeholder{
+    color: #d39e0c;
+}
+.portfolio > .col-3 .contact .row-2 form input:focus{
+    outline: none;
+}
+.portfolio > .col-3 .contact .row-2 form textarea{
+    padding: 15px 10px;
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #d39e0c;
+    background-color: #d39e0c14;
+    border-radius: 1px;
+}
+.portfolio > .col-3 .contact .row-2 form textarea:focus{
+    outline: none;
+}
+.portfolio > .col-3 .contact .row-2 form textarea::placeholder{
+    color: #d39e0c;
+}
+.portfolio > .col-3 .contact .row-2 form button{
+    padding: 10px;
+    background-color: #d39e0c;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+
+
